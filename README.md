@@ -25,3 +25,4 @@ You can play the live web demo directly in your browser here:
 
 ## 📝 Development Notes
 During development, I faced a few bugs regarding animation tracks and setting up precise keyframes for the moving platforms. I utilized AI assistance to debug the animation syncing issues and refine the physics, while building the core mechanics and level design from scratch.
+<img width="1106" height="628" alt="image" src="https://github.com/user-attachments/assets/423ed3a7-d1f8-4d79-9057-4a5a6cdd8c86" />
