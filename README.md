@@ -1,28 +1,24 @@
-# Platformer Adventure 🎮
+Platformer Adventure
+I built this 2D platformer in Godot 4 as a web-based demo. My main goal was to practice making responsive jump controls and fixing issues with moving objects in a 2D world.
 
-A 2D platformer game built from scratch using the **Godot Engine**, featuring smooth character movement, physics-based challenges, and dynamic moving platforms. 
+Play the game here on Itch.io
 
-## 🚀 Play the Game
-You can play the live web demo directly in your browser here:  
-👉 **[Click Here to Play on Itch.io](https://ahmedanwar45555555.itch.io/platformer-adventure)**
+How It Works
+Movement: Basic run and jump mechanics. I tweaked the gravity and collision boxes until the controls felt snappy instead of floaty.
 
----
+Platforms: Moving platforms created using Godot's animation tracks. They are hooked into the physics loop so the player doesn't slide off while standing on them.
 
-## ✨ Features
-* **Custom Character Physics:** Smooth movement, jumping, and precise collision handling.
-* **Moving Platforms:** Closed-loop feedback systems for synchronized moving platforms.
-* **Animation Tracks:** Custom animation keyframes for fluid world interactions and obstacles.
-* **Web-Optimized Rendering:** Engineered using Godot's *Compatibility* renderer for seamless browser gameplay.
+Web Build: Exported using the Compatibility renderer (OpenGL 3) so it opens fine in chrome or firefox without long load times.
 
----
+Tech Stack
+Engine: Godot 4
 
-## 🛠️ Built With
-* **Engine:** Godot 4.x
-* **Language:** GDScript
-* **Target Platform:** Web (HTML5)
+Code: GDScript
 
----
+Platform: HTML5 / Web
 
-## 📝 Development Notes
-During development, I faced a few bugs regarding animation tracks and setting up precise keyframes for the moving platforms. I utilized AI assistance to debug the animation syncing issues and refine the physics, while building the core mechanics and level design from scratch.
+Development Notes
+The hardest part was definitely the moving platforms. At first, whenever the platform moved, my character would stay still or jitter around instead of riding along with it.
+
+I figured out that the animation was running on a normal timer instead of syncing up with Godot's physics step. After changing the process mode to physics and adjusting the keyframes, the platform collision finally worked smoothly.
 <img width="1106" height="628" alt="image" src="https://github.com/user-attachments/assets/423ed3a7-d1f8-4d79-9057-4a5a6cdd8c86" />
